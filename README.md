@@ -54,21 +54,38 @@ This makes it ideal for enterprise environments where **data privacy is non-nego
 
 ---
 
-## ⚙️ How It Works
+## 🧠 Architecture
 
-1. Documents are uploaded and split into chunks
-2. Chunks are converted into embeddings and stored in ChromaDB
-3. On query:
+DocuMind follows an Agentic RAG (Retrieval-Augmented Generation) pipeline:
 
-   * Relevant chunks are retrieved
-   * Low-quality matches are filtered
-   * Top chunks are reranked using LLM
-4. Agent decides:
+1. **User Query**
+   - User inputs a question via the Streamlit interface
 
-   * Use uploaded docs
-   * Use web search
-   * Or answer directly
-5. Final response is generated with source awareness
+2. **Agent Decision Layer**
+   - An intelligent agent decides the best source:
+     - Uploaded documents
+     - Vector database
+     - Web search
+
+3. **Retrieval Layer**
+   - Relevant documents are fetched using semantic search (ChromaDB)
+
+4. **Relevance Filtering + Reranking**
+   - Low-quality results are filtered out
+   - Top results are reranked using the LLM
+
+5. **Context Injection**
+   - Retrieved content is formatted and passed to the model
+
+6. **LLM Generation**
+   - Local LLM (Ollama - LLaMA 3.1) generates the final answer
+
+7. **Response + Source Tracking**
+   - Final answer is displayed with source (Upload / DB / Web)
+
+## 🔄 System Flow
+
+User Query → Agent → Tool Selection → Retrieval → Reranking → LLM → Response
 
 ---
 
