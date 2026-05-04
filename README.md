@@ -1,32 +1,46 @@
-# DocuMind - Agentic RAG Document Assistant
+# DocuMind – Privacy-First Agentic RAG System
 
-DocuMind is an AI-powered document assistant that enables organizations and individuals to upload their documents and interact with them using natural language.
+DocuMind is a privacy-focused AI document assistant designed for organizations that need to interact with their internal data **without exposing it to external LLM APIs**.
 
-It uses Retrieval-Augmented Generation (RAG) combined with an intelligent agent to provide accurate, context-aware answers from multiple sources.
+Unlike typical AI tools, DocuMind runs locally using Ollama and combines Retrieval-Augmented Generation (RAG) with an intelligent agent to deliver **accurate, context-aware, and source-grounded answers** from multiple data sources.
 
----
-
-## 🚀 Use Case
-
-DocuMind is designed for real-world scenarios such as:
-
-* Companies querying internal documents
-* Students interacting with study materials
-* Teams searching knowledge bases
-* Anyone who wants to "chat with their documents"
+It is built to handle real-world enterprise scenarios where **data security, reliability, and explainability** are critical.
 
 ---
 
-## ✨ Features
+## 🚀 Use Cases
 
-* 📄 Upload and query PDF or TXT documents
-* 🧠 Intelligent agent for dynamic decision-making
-* 🔍 Semantic search using vector embeddings
-* 🧩 Chunking + reranking for improved accuracy
-* 🌐 Optional web search for real-time information
-* 📌 Source tracking (Upload / Web / Model Knowledge)
-* 💬 Context-aware conversational memory
+DocuMind is designed for practical, real-world applications such as:
 
+- 🏢 Companies querying internal and confidential documents
+- 📚 Students interacting with personal study materials
+- 🧠 Teams exploring internal knowledge bases
+- 🔐 Organizations that cannot send sensitive data to tools like ChatGPT or Claude
+
+---
+## 🔐 Why Not Just Use ChatGPT or Claude?
+
+Most AI tools require sending data to external servers, which creates serious privacy and compliance concerns.
+
+DocuMind solves this by:
+
+- Running fully locally using Ollama
+- Keeping all documents and queries on-device
+- Avoiding external API calls for sensitive data
+- Providing controlled, document-grounded answers instead of hallucinated responses
+
+This makes it ideal for enterprise environments where **data privacy is non-negotiable**.
+
+---
+
+## 🏆 Key Differentiators
+
+- 🔒 Privacy-first architecture (local LLM with Ollama)
+- 🤖 Agent-based tool selection (documents, database, web)
+- 📄 Retrieval-Augmented Generation (RAG) pipeline
+- 🎯 Relevance filtering and reranking for better answers
+- 🌐 Multi-source intelligence (Uploads + DB + Web)
+- ⚙️ Modular and extensible system design
 ---
 
 ## 🛠️ Tech Stack
