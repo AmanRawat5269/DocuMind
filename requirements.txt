@@ -1,0 +1,13 @@
+langchain
+langchain-ollama
+langchain-community
+chromadb
+streamlit
+tavily-python
+pypdf
+os
+langchain-chroma
+langgraph
+tavily-python
+langchain-tavily
+python-dotenv
