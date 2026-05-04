@@ -74,9 +74,20 @@ Make sure:
 
 ## 📸 Demo / Screenshots
 
-<img width="1919" height="880" alt="image" src="https://github.com/user-attachments/assets/9075b1db-b3fc-422f-8677-a3c1c069b715" />
+### 💬 Chat Interface
+Clean Streamlit-based chat UI with document upload support and source tracking.
+<img width="1919" height="903" alt="Screenshot 2026-05-04 231938" src="https://github.com/user-attachments/assets/b85efc0f-aef3-4919-804a-dadc1b1ba880" />
 
 ---
+
+### 📄 Answer from Uploaded Document
+Example where the system retrieves context from user-uploaded files and generates grounded answers.
+<img width="1919" height="890" alt="image" src="https://github.com/user-attachments/assets/417bc397-8d3c-4da4-b4ba-7e3ee437c2d6" />
+
+---
+### 🌐 Answer using Web Search
+When local context is insufficient, the agent intelligently falls back to real-time web search.
+
 <img width="1902" height="888" alt="image" src="https://github.com/user-attachments/assets/f0b2d781-e53b-4851-aa01-222b85aa43ba" />
 
 
